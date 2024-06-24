@@ -1,0 +1,297 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.erg{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    
+}
+
+.container{
+    width: 100%;
+    height: 1080px;
+}
+
+.cont-bread{
+    display: flex;
+    align-items: center;
+
+}
+
+.bread{
+    width: 550px;
+    padding-left: 16%;
+}
+
+ul.breadcrumb {
+    padding: 40px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    color: #42372D;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #888888;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0000008e;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #42372D;
+    text-decoration: underline;
+}
+
+.recycle-container{
+    display: flex;
+    justify-content: center;
+}
+
+.recycle-card{
+    width: 682px;
+    height: 172px;
+    box-shadow: 0px 0px 10px 2px rgba(236, 101, 67, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bl-ico{
+    border: #EC6543 solid 2px;
+    margin-left: 10px;
+    width: 17%;
+    height: 70%;
+}
+
+.card-text-container{
+    margin-left: 20px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+.card-text{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card-size{
+    width: 145px;
+    height: 53px;
+    border: #EC6543 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size{
+    font-size: 20px;
+}
+
+.price-card{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 95px;
+    margin-right: 39px;
+}
+
+.num-card{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cross{
+    margin-left: 36px;
+    margin-right: 20px;
+}
+
+.order-container{
+    margin-left: 39px;
+    width: 399px;
+    height: fit-content;
+    box-shadow: 0px 0px 10px 2px rgba(236, 101, 67, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.order-text-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.order-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+
+.name-order{
+    font-size: 20px;
+
+}
+
+.order-tovar{
+    font-size: 20px;
+    margin-left: 113.5px;
+    margin-bottom: 0px;
+}
+
+.order-tovar1{
+    font-size: 20px;
+    margin-left: 190px;
+}
+
+.name-order1{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.ff1{
+    display: flex;
+    margin-top: -30px;
+}
+
+.ff{
+    display: flex;
+}
+
+.order-line{
+    width: 352px;
+}
+
+.line-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.finish{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.finish-price{
+    font-size: 20px;
+    margin-left: 240px;
+}
+
+.btn-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-recycle{
+    width: 353px;
+    height: 66px;
+    background-color: #EC6543;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.order-description-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.order-description{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 297px;
+    text-align: center;
+}
+
+.dell{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.left{
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .erg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .head-str{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 870px) {
+    .recycle-card{
+        flex-direction: column;
+        display: flex;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 400px;
+    }
+
+    .bread{
+        display: none;
+    }
+    .card-text-container{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .price-card{
+        margin: 0;
+    }
+
+    .order-container{
+        margin: 0px;
+    }
+    .card-size{
+        margin-bottom: 20px;
+    }
+
+    .bl-ico{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}

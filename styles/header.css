@@ -1,0 +1,194 @@
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+
+.open {
+    display: flex !important;
+}
+
+.header {
+    background-color: #42372D;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-logo {
+    width: 5%;
+    padding-left: 10%;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contacts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 50px;
+    background-color: #42372D;
+}
+
+.contacts-text{
+    padding-left: 10px;
+    font-weight: 12px;
+    color: white;
+    font-weight: 300;
+}
+
+
+button {
+    background-color: #1055CC;
+    padding: 15px;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 23px;
+}
+
+.user{
+    color: white;
+}
+
+.burger span {
+    height: 4px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #ffffff;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0
+}
+
+.burger::after {
+    bottom: 0
+}
+
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+    transform: scale(0)
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+
+/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+@media (max-width: 1130px) {
+    .burger {
+        display: flex
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        height: fit-content;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        padding-top: 70px;
+        overflow-y: auto;
+        background-color: #42372D;
+        animation: burgerAnimation 0.4s;
+        align-items: start;
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        width: 7%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+
+    .header-btn {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .nav ul {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 50px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

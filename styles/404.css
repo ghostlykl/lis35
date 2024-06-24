@@ -1,0 +1,61 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    
+}
+
+.container{
+    width: 100%;
+    height: fit-content;
+    background: url("../img/bg.png");
+}
+
+.error-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.error{
+    font-size: 256px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -40px;
+}
+
+.error-text{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.error-description{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 325px;
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.go-to-main{
+    width: 373px;
+    height: 91px;
+    background-color: #EC6543;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    border: none;
+}

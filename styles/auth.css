@@ -1,0 +1,215 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    
+}
+
+.container{
+    width: 100%;
+    height: 1080px;
+}
+
+.cont-bread{
+    display: flex;
+    align-items: center;
+
+}
+
+.bread{
+    width: 550px;
+    padding-left: 16%;
+}
+
+ul.breadcrumb {
+    padding: 40px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    color: #42372D;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #888888;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0000008e;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #42372D;
+    text-decoration: underline;
+}
+
+.offer-up-cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-offer{
+    width: 571px;
+    height: fit-content;
+    box-shadow: 0px 0px 10px 2px rgba(236, 101, 67, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.form-reg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offer-title{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.offer-card{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 116px;
+    align-items: center;
+    margin-bottom: 34px;
+    margin-top: 10px;
+}
+
+.bl-ico{
+    border: #EC6543 solid 2px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+
+.card-text-container{
+    margin-left: 20px;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.card-size{
+    width: 146px;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #EC6543 solid 2px;
+    margin-top: -15px;
+}
+
+.size{
+    font-size: 20px;
+}
+
+.num-card{
+    font-size: 16px;
+    margin-left: 54px;
+}
+
+.price-card{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-right: -70px;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-reg{
+    color: #1D1916;
+}
+
+.offer-input{
+    width: 473px;
+    height: 57px;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.auth-btn{
+    color: #1D1916;
+}
+
+.finish-btn-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-finish{
+    width: 493px;
+    height: 65px;
+    background-color: #EC6543;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width:1200px){
+    .bread{
+        display: none;
+    }
+    .container-offer{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:870px){
+    .bread{
+        display: none;
+    }
+    .container-offer{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .input-container{
+        width: 100%;
+    }
+    .form-reg{
+        align-items: center;
+    }
+    .btn-finish{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .offer-input{
+        width: 100%;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,189 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    
+}
+
+.container2{
+    width: 100%;
+    height: fit-content;
+    margin-top: 40px;
+}
+
+.cont-bread{
+    display: flex;
+    align-items: center;
+
+}
+
+.bread{
+    width: 550px;
+    padding-left: 16%;
+}
+
+ul.breadcrumb {
+    padding: 40px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    color: #42372D;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #888888;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0000008e;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #42372D;
+    text-decoration: underline;
+}
+
+.card-content{
+    margin-left: 60px;
+    margin-top: -28px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.card-tovar{
+    width: 513px;
+    height: 513px;
+    background-image: url("../img/card8.8.png");
+    background-repeat: no-repeat;
+    border: #EC6543 solid 2px;
+}
+
+.card-tv{
+    padding-left: 50px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1D1916;
+    padding-bottom: 20px;
+}
+
+.card-text{
+    font-size: 20px;
+    color: #1D1916;
+}
+
+.tov-size-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tov-size-block{
+    width: 163px;
+    height: 56px;
+    background-color: white;
+    border: #EC6543 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.btn-buy{
+    background-color: #EC6543;
+    width: 262px;
+    height: 78px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-tov-container{
+    display: flex;
+}
+
+.price-title{
+    font-size: 20px;
+    color: black;
+    margin-top: 0px;
+}
+
+.price{
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.btn-text{
+    margin-left: 20px;
+}
+
+.inp-number{
+    width: 10%;
+}
+
+@media (max-width:1200px){
+    .card-tv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tov-size-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-tovar{
+        width: 50%;
+    }
+}
+
+@media (max-width:870px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .tov-size-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-tovar{
+        width: 50%;
+        height: 50%;
+    }
+
+    .bread{
+        display: none;
+    }
+}
